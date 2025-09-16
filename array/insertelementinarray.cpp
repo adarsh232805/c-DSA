@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 void insert(int arr[],int n,int value,int pos){
+    // loop for shifting the elements
     for(int i=n-1;i>=pos;i--)
 {
     arr[i+1]=arr[i];
