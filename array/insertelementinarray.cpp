@@ -9,6 +9,7 @@ void insert(int arr[],int n,int value,int pos){
 arr[pos]=value;
 n=n+1;
 }
+
 int main(){
     int n;
     cin>>n;
