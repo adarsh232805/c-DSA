@@ -2,6 +2,7 @@
 #include<algorithm>
 #include<climits>
 using namespace std;
+int maximum;
 int main(){
     int n=8;
     int arr[n]={3,-4,5,4,-1,7,-8};
@@ -11,13 +12,11 @@ int main(){
         for(int end=st;end<n;end++){
            
                 sum=sum+arr[end];
-               
-                maxsum=max(sum,maxsum);
-            
-           
-        }
-      
-    }
-    cout<<maxsum<<" ";
+                maxsum=max(maxsum,sum);     
+         }
 
-}
+    }
+   cout<<maxsum;
+    }
+    
+
